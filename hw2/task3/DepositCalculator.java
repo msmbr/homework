@@ -16,11 +16,11 @@ public class DepositCalculator {
 		for(int i=0; i<incomeByPeriodArr.length; i++) {
 			
 			yearIncome += incomeByPeriodArr[i];
-			incomesByPeriods = incomesByPeriods+(i%periods+1)+"(+"+Math.floor(incomeByPeriodArr[i]*100)/100d+")  ";
+			incomesByPeriods = incomesByPeriods+(i%periods+1)+"(+"+Math.floor(incomeByPeriodArr[i]*100)/100+")  ";
 			
 			//out for each year and incomplete year
 			if((i+1)%periods==0 || ((i+1)%periods!=0 && i==incomeByPeriodArr.length-1)) {
-				System.out.println(String.format("Накопичена сума грошей за %sй рік: %s грн.", i/periods+1, Math.floor(yearIncome*100)/100d));
+				System.out.println(String.format("Накопичена сума грошей за %sй рік: %s грн.", i/periods+1, Math.floor(yearIncome*100)/100));
 				System.out.println("Період року(дохід): "+incomesByPeriods+"\n");
 				yearIncome = 0d;
 				incomesByPeriods = "";
@@ -29,7 +29,7 @@ public class DepositCalculator {
 		}
 		
 		double compoundInterest = calculateCompoundInterest(deposit, percent, periods, years);
-		System.out.println("Нараховані складині відсотки: " + Math.floor(compoundInterest*100)/100d + " грн.");
+		System.out.println("Нараховані складині відсотки: " + Math.floor(compoundInterest*100)/100 + " грн.");
 	}
 
 	private static double calculateCompoundInterest(double deposit, float percent, int periods, float years) {
