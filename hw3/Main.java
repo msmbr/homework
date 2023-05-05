@@ -8,12 +8,12 @@ public class Main {
 		hw3.forPrintOddNumbersFrom1to99();
 
 		System.out.println("\ntask 2");
-		hw3.forPrintFactorial(-5);
+		hw3.forPrintFactorial(5);
 
 		System.out.println("\ntask 3_1");
 		hw3.whilePrintOddNumbersFrom1to99();
 		System.out.println("task 3_2");
-		hw3.whilePrintFactorial(0);
+		hw3.whilePrintFactorial(5);
 
 		System.out.println("\ntask 4_1");
 		hw3.doWhilePrintOddNumbersFrom1to99();

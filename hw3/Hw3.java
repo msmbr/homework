@@ -10,10 +10,9 @@ public class Hw3 {
 
 	public void forPrintFactorial(int n) {
 		int result = 1;
-		for(int i=1; i<Math.abs(n)+1; ++i) {
+		for(int i=1; i<n+1; ++i) {
 			result *= i;
 		}
-		result = n<0?-1*result:result;
 		System.out.println(result);
 	}
 
@@ -29,11 +28,10 @@ public class Hw3 {
 	public void whilePrintFactorial(int n) {
 		int result = 1;
 		int i=1;
-		while(i<Math.abs(n)+1) {
+		while(i<n+1) {
 			result = result*i;
 			++i;
 		}
-		result = n<0?-1*result:result;
 		System.out.println(result);
 	}
 
@@ -52,8 +50,7 @@ public class Hw3 {
 		do {
 			result = result*i;
 			++i;
-		} while(i<Math.abs(n)+1);
-		result = n<0?-1*result:result;
+		} while(i<n+1);
 		System.out.println(result);
 	}
 
