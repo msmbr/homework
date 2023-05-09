@@ -1,9 +1,11 @@
+package hw2.task2;
+
 public class Average {
 	public static void main(String[] args) {
 
 		float sum = 0f;
-		for(int i=0; i<args.length; i++) {
-			sum += Float.valueOf(args[i]);
+		for (String arg : args) {
+			sum += Float.parseFloat(arg);
 		}
 
 		float average = sum/args.length;

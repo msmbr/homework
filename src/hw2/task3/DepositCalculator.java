@@ -1,3 +1,4 @@
+package hw2.task3;
 
 public class DepositCalculator {
 	public static void main(String[] args) {
