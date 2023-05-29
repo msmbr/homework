@@ -20,7 +20,7 @@ public class Main {
         System.out.println("countOccurrence: " + country + " = " + hw10.countOccurrence(randomLstCountries, country));
 
         // 2
-        List<Integer> intLst = hw10.toList(new Integer[]{5,4,7,6,4,7});
+        List<Integer> intLst = hw10.toList(new Integer[]{5, 4, 7, 6, 4, 7});
         System.out.println("2) " + intLst);
 
         //3

@@ -23,7 +23,7 @@ public class HW10 {
     }
 
     public String getRandomWord(List<String> lst) {
-        return lst.get((int) (Math.random()*lst.size()));
+        return lst.get((int) (Math.random() * lst.size()));
     }
 
     //2
@@ -36,7 +36,7 @@ public class HW10 {
     }
 
     //3
-    public  <T> List<T> findUnique(List<T> lst) {
+    public <T> List<T> findUnique(List<T> lst) {
         return new ArrayList<T>(new HashSet<>(lst));
     }
 
@@ -54,7 +54,7 @@ public class HW10 {
         Map<String, Integer> map = new HashMap<>();
         for(String e: lst) {
             if(map.containsKey(e)) {
-                map.put(e, map.get(e)+1);
+                map.put(e, map.get(e) + 1);
             } else {
                 map.put(e, 1);
             }
