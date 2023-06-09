@@ -7,7 +7,7 @@ public class FirstTasks {
         System.out.println("2) findSymbolOccurrence: " + findSymbolOccurrence("Hello World!", 'l'));
         System.out.println("3) findWordPosition: " + findWordPosition("Apollo", "pollo"));
         System.out.println("4) stringReverse: " + stringReverse("Hello"));
-        System.out.println("5) isPalindrome: " + isPalindrome("ERe"));
+        System.out.println("5) isPalindrome: " + isPalindrome("ERE"));
     }
 
     public static int findSymbolOccurrence(String str, char findChar) {
@@ -29,7 +29,6 @@ public class FirstTasks {
     }
 
     public static boolean isPalindrome(String str) {
-        str = str.toLowerCase();
         return str.equals(stringReverse(str));
     }
 }
