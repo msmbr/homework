@@ -1,12 +1,10 @@
 package org.example;
 
-import lombok.Getter;
 import org.example.Products.Product;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-@Getter
 public class ProductService {
     public List<Product> getProductsByPriceFromNExclusive(List<Product> products, Product.Type type, Double price) {
         return products.stream().filter(product -> product.getType() == type && product.getPrice() > price).toList();
